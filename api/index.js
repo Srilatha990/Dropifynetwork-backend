@@ -36,7 +36,7 @@ app.set("trust proxy", 1);
 app.use(express.json({ limit: "4mb" }));
 app.use(helmet());
 const corsOptions = {
-  origin: ['https://dropifynetwork-admin.vercel.app',], // Both production and local URLs
+  origin: ['https://dropifynetwork-admin.vercel.app', 'https://dropifynetwork-frontend.vercel.app'], // Both production and local URLs
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
